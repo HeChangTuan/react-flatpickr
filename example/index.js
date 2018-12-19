@@ -22,7 +22,7 @@ class App extends Component {
               date: str
             })
           }
-          onInput={e => console.log(e.target.value)}
+          onInput={val => this.setState({ val })}
           options={{
             allowInput: true
           }}
