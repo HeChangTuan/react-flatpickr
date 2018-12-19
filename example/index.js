@@ -22,11 +22,12 @@ class App extends Component {
               date: str
             })
           }
-          onInput={val => this.setState({ val })}
+          onInput={val => this.setState({ date: val })}
           options={{
             allowInput: true
           }}
         />
+        {date}
       </main>
     )
   }
